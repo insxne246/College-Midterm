@@ -17,6 +17,7 @@ def clear():
         _ = system("clear") 
 
 
+
 # Variables
 FirstName = input("What is your name?: ")
 
@@ -40,6 +41,16 @@ elapsed_time = None
 quiz_start = None
 
 quiz_start = input("Are you ready to begin your attempt? Y/N: ")
+
+CorrectAnswer = """
+_____________
+|           |
+|  Correct! |
+|           |
+|___________|
+"""
+
+
 
 if quiz_start == "Y":
     quiz_start = True
@@ -68,7 +79,7 @@ if quiz_start == True:
     if Question1Answer == "T":
         print("")
         print("")
-        print("Correct")
+        print(CorrectAnswer)
         print("")
         print("")        
         TotalScore = TotalScore + 10
@@ -94,7 +105,7 @@ if quiz_start == True:
     if Question2Answer == "T":
         print("")
         print("")
-        print("Correct")
+        print(CorrectAnswer)
         print("")
         print("")        
         TotalScore = TotalScore + 10
@@ -119,7 +130,7 @@ if quiz_start == True:
     if Question3Answer == "T":
         print("")
         print("")
-        print("Correct")
+        print(CorrectAnswer)
         print("")
         print("")
         TotalScore = TotalScore + 10
@@ -145,7 +156,7 @@ if quiz_start == True:
     if Question1Answer == "F":
         print("")
         print("")
-        print("Correct")
+        print(CorrectAnswer)
         print("")
         print("")        
         TotalScore = TotalScore + 10
@@ -171,7 +182,7 @@ if quiz_start == True:
     if Question3Answer == "T":
         print("")
         print("")
-        print("Correct")
+        print(CorrectAnswer)
         print("")
         print("")
         TotalScore = TotalScore + 10
@@ -200,7 +211,7 @@ if quiz_start == True:
     if Question6Answer == "a" or "Python":
         print("")
         print("")
-        print("Correct")
+        print(CorrectAnswer)
         print("")
         print("")        
         TotalScore = TotalScore + 10
