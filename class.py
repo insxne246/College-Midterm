@@ -339,6 +339,7 @@ if quiz_start == True:
     time.sleep(5)
     clear()
     #______________________________________________________________________________
+    quiz_start == False
     
     if TotalScore >= 90:
         LetterGrade = "A"
@@ -353,6 +354,56 @@ if quiz_start == True:
 
 
     print(FirstName + ", your grade was a " + LetterGrade)
+
+    blocks = 0
+    display = ""
+    spacing = ""
+
+    if int(TotalScore) <= 9:
+        blocks = 0
+        spacing = "                                        "
+    elif int(TotalScore) <= 15:
+        blocks = 1
+        display = "####"
+        spacing = "                                    "
+    elif int(TotalScore) <= 25:
+        blocks = 2
+        display = "########"
+        spacing = "                                "
+    elif int(TotalScore) <= 35:
+        blocks = 3
+        display = "############"
+        spacing = "                            "
+    elif int(TotalScore) <= 45:
+        blocks = 4
+        display = "################"
+        spacing = "                        "
+    elif int(TotalScore) <= 55:
+        blocks = 5
+        display = "####################"
+        spacing = "                    "
+    elif int(TotalScore) <= 65:
+        blocks = 6
+        display = "########################"
+        spacing = "                "
+    elif int(TotalScore) <= 75:
+        blocks = 7
+        display = "############################"
+        spacing = "      "
+    elif int(TotalScore) <= 85:
+        blocks = 8
+        display = "################################"
+        spacing = "        "
+    elif int(TotalScore) <= 95:
+        blocks = 9
+        display = "####################################"
+        spacing ="    "
+    elif int(TotalScore) == 100:
+        blocks = 10
+        display = "########################################"
+        spacing = ""
+
+    print("0 [" + display + " " + str(TotalScore) + "% " + spacing + "] 100" )
 
 else:
     print("Restart the program when you are ready")
