@@ -16,8 +16,6 @@ def clear():
     else: 
         _ = system("clear") 
 
-
-
 # Variables
 FirstName = input("What is your name?: ")
 
@@ -36,11 +34,6 @@ Question8Answer = None
 Question9Answer = None
 Question10Answer = None
 
-elapsed_time = None
-
-quiz_start = None
-
-quiz_start = input("Are you ready to begin your attempt? Y/N: ")
 
 CorrectAnswer = """
 _____________
@@ -49,6 +42,9 @@ _____________
 |           |
 |___________|
 """
+
+
+quiz_start = input("Are you ready to begin your attempt? Y/N: ")
 
 
 
@@ -208,7 +204,7 @@ if quiz_start == True:
 
     Question6Answer = input("Answer: ")
 
-    if Question6Answer == "a" or "Python":
+    if Question6Answer == "a" or Question6Answer == "Python":
         print("")
         print("")
         print(CorrectAnswer)
@@ -220,6 +216,126 @@ if quiz_start == True:
         TotalScore = TotalScore + 0
 
     print("Movng to question 7 in 5 seconds...")
+    time.sleep(5)
+    clear()
+
+    #______________________________________________________________________________
+
+    #Question 7
+    print("")
+    print("___________________________")
+    print("Question 6: (Multiple choice)")
+    print("")
+    print("The number that comes after 7 is:")
+    print("|(a) 3             |")
+    print("|(b) 5             |")
+    print("|(c) 8             |")
+    print("|(a) 198238u31     |")
+
+    Question7Answer = input("Answer: ")
+
+    if Question7Answer == "c" or Question7Answer == "8":
+        print("")
+        print("")
+        print(CorrectAnswer)
+        print("")
+        print("")        
+        TotalScore = TotalScore + 10
+    else:
+        print("Incorrect, answer c, or 8, was the correct answer")
+        TotalScore = TotalScore + 0
+
+    print("Movng to question 8 in 5 seconds...")
+    time.sleep(5)
+    clear()
+
+    #______________________________________________________________________________
+
+    #Question 8
+    print("")
+    print("___________________________")
+    print("Question 8: (Multiple choice)")
+    print("")
+    print("Red is a:")
+    print("|(a) Number             |")
+    print("|(b) Color              |")
+    print("|(c) Sexual Identity    |")
+    print("|(a) Animal name        |")
+
+    Question8Answer = input("Answer: ")
+
+    if Question8Answer == "b" or  Question8Answer == "Color":
+        print("")
+        print("")
+        print(CorrectAnswer)
+        print("")
+        print("")        
+        TotalScore = TotalScore + 10
+    else:
+        print("Incorrect, answer b, or Color, was the correct answer")
+        TotalScore = TotalScore + 0
+
+    print("Movng to question 9 in 5 seconds...")
+    time.sleep(5)
+    clear()
+
+    #______________________________________________________________________________
+
+    #Question 9
+    print("")
+    print("___________________________")
+    print("Question 9: (Multiple choice)")
+    print("")
+    print("If john buys 10 oranges and nothing else, how many apples will he have?: ")
+    print("|(a) 0              |")
+    print("|(b) 5              |")
+    print("|(c) -56            |")
+    print("|(a) ∞              |")
+
+    Question9Answer = input("Answer: ")
+
+    if Question9Answer == "a" or  Question9Answer == "None":
+        print("")
+        print("")
+        print(CorrectAnswer)
+        print("")
+        print("")        
+        TotalScore = TotalScore + 10
+    else:
+        print("Incorrect,answer A, or None, was the correct answer, some people....")
+        TotalScore = TotalScore + 0
+
+    print("Movng to question 9 in 5 seconds...")
+    time.sleep(5)
+    clear()
+
+    #______________________________________________________________________________
+
+    #Question 10
+    print("")
+    print("___________________________")
+    print("Question 10: (Multiple choice)")
+    print("")
+    print("How many inches are in one foot (Ft.)")
+    print("|(a) 0              |")
+    print("|(b) 36             |")
+    print("|(c) hello          |")
+    print("|(a) 12             |")
+
+    Question10Answer = input("Answer: ")
+
+    if Question10Answer == "a" or  Question10Answer == "12":
+        print("")
+        print("")
+        print(CorrectAnswer)
+        print("")
+        print("")        
+        TotalScore = TotalScore + 10
+    else:
+        print("Incorrect, answer A, or 12, was the correct answer, some people....")
+        TotalScore = TotalScore + 0
+
+    print("Calculating your grade...")
     time.sleep(5)
     clear()
     #______________________________________________________________________________
