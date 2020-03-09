@@ -1,14 +1,15 @@
 # Midterm
 # by Jeremy Johann
 # This is the midterm for CIS-115, this program features 5 True/False and 5 MC questions, and automatically calculates a grade
-# CIS-115 Jan 23, 2020
+# CIS-115 Jan 23, 2020 
 
+#import these things
 import sys
 import os
 from os import system, name  
 import time
 
-#Clear console function
+#Clear console function (TY STACKOVERFLOW <3)
 def clear(): 
   
     if name == "nt": 
@@ -33,7 +34,6 @@ Question7Answer = None
 Question8Answer = None
 Question9Answer = None
 Question10Answer = None
-
 
 CorrectAnswer = """
 _____________
@@ -175,7 +175,7 @@ if quiz_start == True:
 
     Question3Answer = input("T/F: ")
 
-    if Question3Answer == "T":
+    if Question3Answer == "F":
         print("")
         print("")
         print(CorrectAnswer)
@@ -335,11 +335,12 @@ if quiz_start == True:
         print("Incorrect, answer A, or 12, was the correct answer, some people....")
         TotalScore = TotalScore + 0
 
+    quiz_start = False
+
     print("Calculating your grade...")
     time.sleep(5)
     clear()
     #______________________________________________________________________________
-    quiz_start == False
     
     if TotalScore >= 90:
         LetterGrade = "A"
@@ -352,59 +353,54 @@ if quiz_start == True:
     else:
         LetterGrade = "F"
 
+    print("|_________________________________________________")
+    print("|" + FirstName + ", your grade was a " + LetterGrade)
+    print("|_________________________________________________")
+    print("| Visualized Grade:")
+    print("|____________________________________________________________")
+    print("|")
 
-    print(FirstName + ", your grade was a " + LetterGrade)
-
-    blocks = 0
     display = ""
     spacing = ""
 
     if int(TotalScore) <= 9:
-        blocks = 0
         spacing = "                                        "
     elif int(TotalScore) <= 15:
-        blocks = 1
         display = "####"
         spacing = "                                    "
     elif int(TotalScore) <= 25:
-        blocks = 2
         display = "########"
         spacing = "                                "
     elif int(TotalScore) <= 35:
-        blocks = 3
         display = "############"
         spacing = "                            "
     elif int(TotalScore) <= 45:
-        blocks = 4
         display = "################"
         spacing = "                        "
     elif int(TotalScore) <= 55:
-        blocks = 5
         display = "####################"
         spacing = "                    "
     elif int(TotalScore) <= 65:
-        blocks = 6
         display = "########################"
         spacing = "                "
     elif int(TotalScore) <= 75:
-        blocks = 7
         display = "############################"
         spacing = "      "
     elif int(TotalScore) <= 85:
-        blocks = 8
         display = "################################"
         spacing = "        "
     elif int(TotalScore) <= 95:
-        blocks = 9
         display = "####################################"
         spacing ="    "
     elif int(TotalScore) == 100:
-        blocks = 10
         display = "########################################"
         spacing = ""
 
-    print("0 [" + display + " " + str(TotalScore) + "% " + spacing + "] 100" )
-
+    print("| 0 (F) [" + display + spacing + "] 100 (A)" )
+    print("|____________________________________________________________")
+    print("")
+    print("Automatically closing in 30 seconds..")
+    time.sleep(30)
 else:
     print("Restart the program when you are ready")
     time.sleep(5)
