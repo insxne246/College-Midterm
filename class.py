@@ -10,12 +10,20 @@ from os import system, name
 import time
 
 #Clear console function (TY STACKOVERFLOW <3)
-def clear(): 
+def clear_console(): 
   
     if name == "nt": 
         _ = system("cls") 
     else: 
         _ = system("clear") 
+
+def order_110(): #if you are stupid enough
+    print("        [ ALERT ALERT ALERT ]         ")
+    print("______________________________________")
+    print("|    User has a grade below a 60     |")
+    print("|                                    |")
+    print("| Everyone shall throw grapes at him |")
+    print("--------------------------------------")
 
 # Variables
 FirstName = input("What is your name?: ")
@@ -34,6 +42,8 @@ Question7Answer = None
 Question8Answer = None
 Question9Answer = None
 Question10Answer = None
+
+user_is_dumb = None
 
 CorrectAnswer = """
 _____________
@@ -85,7 +95,7 @@ if quiz_start == True:
 
     print("Movng to question 2 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
 
     #______________________________________________________________________________
 
@@ -111,7 +121,7 @@ if quiz_start == True:
 
     print("Movng to question 3 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
     #______________________________________________________________________________
 
     #Question 3
@@ -136,7 +146,7 @@ if quiz_start == True:
 
     print("Movng to question 4 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
 
     #______________________________________________________________________________
 
@@ -162,7 +172,7 @@ if quiz_start == True:
 
     print("Movng to question 5 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
 
     #______________________________________________________________________________
 
@@ -188,7 +198,7 @@ if quiz_start == True:
 
     print("Movng to question 6 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
     #______________________________________________________________________________
 
     #Question 6
@@ -217,7 +227,7 @@ if quiz_start == True:
 
     print("Movng to question 7 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
 
     #______________________________________________________________________________
 
@@ -247,7 +257,7 @@ if quiz_start == True:
 
     print("Movng to question 8 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
 
     #______________________________________________________________________________
 
@@ -277,7 +287,7 @@ if quiz_start == True:
 
     print("Movng to question 9 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
 
     #______________________________________________________________________________
 
@@ -307,7 +317,7 @@ if quiz_start == True:
 
     print("Movng to question 9 in 5 seconds...")
     time.sleep(5)
-    clear()
+    clear_console()
 
     #______________________________________________________________________________
 
@@ -339,7 +349,7 @@ if quiz_start == True:
 
     print("Calculating your grade...")
     time.sleep(5)
-    clear()
+    clear_console()
     #______________________________________________________________________________
     
     if TotalScore >= 90:
@@ -399,8 +409,15 @@ if quiz_start == True:
     print("| 0 (F) [" + display + spacing + "] 100 (A)" )
     print("|____________________________________________________________")
     print("")
+    
+    if TotalScore < 60:
+        user_is_dumb = True
+        order_110()
+
+    print("")
     print("Automatically closing in 30 seconds..")
     time.sleep(30)
+    exit()
 else:
     print("Restart the program when you are ready")
     time.sleep(5)
