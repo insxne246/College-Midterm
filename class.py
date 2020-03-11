@@ -26,7 +26,10 @@ def order_110(): #if you are stupid enough
     print("--------------------------------------")
 
 # Variables
+print("")
+print("_____________________")
 FirstName = input("What is your name?: ")
+print("")
 
 TotalScore = 0
 
@@ -66,10 +69,14 @@ else:
 if quiz_start == True:
 
     #Quiz start
-
+    clear_console()
+    print("")
+    print("")
     print("Welcome to the CIS-115 midterm!")
     print("")
-    print("Hope you studied")
+    print("Hope you studied u_u")
+    print("")
+    print("ALL ANSWERS ARE CASE SENSITIVE >:(")
 
     #______________________________________________________________________________
 
@@ -79,6 +86,8 @@ if quiz_start == True:
     print("Question 1: (True or False)")
     print("")
     print("CIS-115 is my favorite course?")
+    print("___________________________")
+    print("")
 
     Question1Answer = input("T/F: ")
 
@@ -105,6 +114,8 @@ if quiz_start == True:
     print("Question 2: (True or False)")
     print("")
     print("All humans are mammals")
+    print("___________________________")
+    print("")
 
     Question2Answer = input("T/F: ")
 
@@ -130,6 +141,8 @@ if quiz_start == True:
     print("Question 3: (True or False)")
     print("")
     print("North Carolina is in the USA")
+    print("___________________________")
+    print("")
 
     Question3Answer = input("T/F: ")
 
@@ -156,6 +169,8 @@ if quiz_start == True:
     print("Question 1: (True or False)")
     print("")
     print("2 + 2 = 9121232")
+    print("___________________________")
+    print("")
 
     Question1Answer = input("T/F: ")
 
@@ -182,6 +197,8 @@ if quiz_start == True:
     print("Question 5: (True or False)")
     print("")
     print("The USA is fake")
+    print("___________________________")
+    print("")
 
     Question3Answer = input("T/F: ")
 
@@ -241,6 +258,8 @@ if quiz_start == True:
     print("|(b) 5             |")
     print("|(c) 8             |")
     print("|(a) 198238u31     |")
+    print("___________________________")
+    print("")
 
     Question7Answer = input("Answer: ")
 
@@ -271,6 +290,8 @@ if quiz_start == True:
     print("|(b) Color              |")
     print("|(c) Sexual Identity    |")
     print("|(a) Animal name        |")
+    print("___________________________")
+    print("")
 
     Question8Answer = input("Answer: ")
 
@@ -301,6 +322,8 @@ if quiz_start == True:
     print("|(b) 5              |")
     print("|(c) -56            |")
     print("|(a) ∞              |")
+    print("___________________________")
+    print("")
 
     Question9Answer = input("Answer: ")
 
@@ -331,6 +354,8 @@ if quiz_start == True:
     print("|(b) 36             |")
     print("|(c) hello          |")
     print("|(a) 12             |")
+    print("___________________________")
+    print("")
 
     Question10Answer = input("Answer: ")
 
@@ -415,9 +440,12 @@ if quiz_start == True:
         order_110()
 
     print("")
+    print("Code Repository: https://github.com/insxne246/College-Midterm/")
+    print("")
     print("Automatically closing in 30 seconds..")
     time.sleep(30)
     exit()
+
 else:
     print("Restart the program when you are ready")
     time.sleep(5)
