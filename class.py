@@ -5,9 +5,12 @@
 
 #import these things
 import sys
+import array
 import os
 from os import system, name  
 import time
+
+userinfo = ['']
 
 #Clear console function (TY STACKOVERFLOW <3)
 def clear_console(): 
@@ -28,7 +31,7 @@ def order_110(): #if you are stupid enough
 # Variables
 print("")
 print("_____________________")
-FirstName = input("What is your name?: ")
+userinfo.append(str(input("What is your name?: ")))
 print("")
 
 TotalScore = 0
@@ -389,7 +392,7 @@ if quiz_start == True:
         LetterGrade = "F"
 
     print("|_________________________________________________")
-    print("|" + FirstName + ", your grade was a " + LetterGrade)
+    print("|" + userinfo[0] + ", your grade was a " + LetterGrade)
     print("|_________________________________________________")
     print("| Visualized Grade:")
     print("|____________________________________________________________")
